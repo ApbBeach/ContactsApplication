@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="contactDetails">
+
+    <ImageView android:id="@+id/contactIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/contact"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/contactIcon"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView android:id="@+id/PreviewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Contact Name"
+            android:textColor="#080000"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <TextView android:id="@+id/PreviewNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textColor="#6f6c6c" />
+    </LinearLayout>
+
+</RelativeLayout>

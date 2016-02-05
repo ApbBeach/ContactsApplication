@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <ImageView android:id="@+id/detailsIcon"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/detailsIcon"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView android:id="@+id/nameTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"/>
+
+            <TextView android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textStyle="bold"
+                android:textColor="#040404"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+            <TextView android:id="@+id/companyTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:text="Company:"/>
+
+
+            <TextView android:id="@+id/contactCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solstice Mobile"
+                android:textColor="#040404"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_large_material" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView android:id="@+id/phoneTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"/>
+
+        <LinearLayout android:id="@+id/workNumberlayout"
+        android:orientation="horizontal"
+        android:layout_below="@id/phoneTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/detailsWorkNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(555)555-5555"
+            android:layout_weight="1"
+            android:textColor="#090909" />
+
+        <TextView android:id="@+id/detailsWorkTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textColor="#090909" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/homeNumberLayout"
+            android:orientation="horizontal"
+            android:layout_below="@id/workNumberlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/detailsHomeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(555)555-5556"
+                android:layout_weight="1"
+                android:textColor="#090909" />
+
+            <TextView android:id="@+id/detailsHomeTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_below="@id/homeNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/detailsMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(555)555-5557"
+                android:layout_weight="1"
+                android:textColor="#090909" />
+
+            <TextView android:id="@+id/detailsMobileTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:textColor="#090909" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/addressTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+        <LinearLayout android:id="@+id/detailsAddresslayout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/detailsStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street address"
+                android:textColor="#090909" />
+
+            <TextView android:id="@+id/detailsCityStateZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City, State, Zip"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_toRightOf="@id/detailsAddresslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="Work"
+            android:textColor="#090909" />
+    </RelativeLayout>
+
+    <TextView android:id="@+id/birthdayTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday: "/>
+
+    <TextView android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="December 4, 1980"
+        android:paddingBottom="30dp"
+        android:textColor="#090909" />
+
+    <TextView android:id="@+id/emailTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"/>
+
+    <LinearLayout android:id="@+id/emailLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/detailsEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jsmith@solstice-mobile.com"
+            android:layout_weight="1"
+            android:textColor="#090909" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Work"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="#090909" />
+    </LinearLayout>
+
+
+</LinearLayout>
